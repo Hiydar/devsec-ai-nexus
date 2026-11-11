@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSec-AI Nexus - لوحة الفحص الأمني</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>DevSec-AI Nexus</h1>
+            <p>منصة أتمتة وحماية مشاريع الويب بالذكاء الاصطناعي</p>
+        </header>
+
+        <main>
+            <div class="editor-section">
+                <label for="code-input">أدخل أو الصق الكود البرمجي للفحص:</label>
+                <textarea id="code-input" placeholder="اكتب الكود هنا (مثال: استخدام eval أو مفاتيح سرية مكشوفة)..."></textarea>
+                <button id="scan-btn">بدء الفحص الأمني</button>
+            </div>
+
+            <div class="results-section">
+                <h3>نتائج الفحص:</h3>
+                <div id="results-box">
+                    <p style="color: #8b949e;">لم يتم إجراء أي فحص بعد. الصق الكود واضغط على زر الفحص.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
